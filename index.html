@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selector Desendant Selctor space</title>
+        <style>
+              div#p div#c{ /* Desendant Selector */
+                color:red;    
+              }  
+
+              h1 span{
+                  color:purple;
+              }
+              h2 > span#x{
+                  color:orange;
+              }
+              h2 > span#x > span{
+                  color:#000;
+              }
+        </style>
+    </head>
+    <body>
+        <div id="p">
+            Parent
+            <div id="c">
+                Child
+            </div>
+        </div>
+
+        <h1>
+            h1
+            <span>span</span>
+        </h1>
+
+        <h2>
+            h2
+            <span id="x">
+                span 1
+                <span>
+                    Span 2
+                </span>
+            </span>
+        </h2>
+    </body>
+</html>
